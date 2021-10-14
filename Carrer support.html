@@ -1,0 +1,863 @@
+
+
+
+<html>
+    <head>
+        <title>Career support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+           .topic-header{
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            line-height: 32px;
+            color:gray;
+            font-family:'Bahnschrift Light';
+            margin-top:20px
+           }
+           .footer-shape{
+            height: 46px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+           }
+           .footer-left-shape{
+            height: 50px;
+            width: 180%;
+            left: -40%;
+            bottom: -35%;
+            position: absolute;
+            overflow: hidden;
+            background-color:red;
+            opacity: .5;
+            filter: alpha(opacity=50);
+            transform: rotate(4deg);
+            outline: 1px solid transparent;
+           }
+           .footer-right-shape{
+            height: 50px;
+            width: 180%;
+            left: -40%;
+            bottom: -35%;
+            position: absolute;
+            overflow: hidden;
+            background-color:red;
+            transform: rotate(-4deg);
+            outline: 1px solid transparent;
+           }
+           .footer-logo{
+            position: absolute;
+            right: 5px;
+            bottom: 3px;
+            height: 36px;
+            max-width: 70px;
+           }
+           .footer-image{
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            vertical-align: top;
+           }
+           .card-img-container{
+            width: 100%;
+            height: 100%;
+            background-color: #82A8E1;
+            background-size: cover;
+            background-position: center;
+           }
+           .logo-container{
+            width: 72px;
+            height: 72px;
+            padding: 8px;
+            top: 96px;
+            left: 24px;
+            position: absolute; 
+            border: 1px solid #E1E1E1;
+            border-radius: 3px;
+            z-index: 1;
+            background-color: #FFF;
+            
+           }
+           .partner-logo{
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+           }
+            .card-gradient-body{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 132px;
+                background-image: -moz-linear-gradient(135deg, #2965CA, #563BC2);
+                background-image: -webkit-linear-gradient(135deg, #2965CA, #563BC2);
+                background-image: linear-gradient(135deg, #2965CA, #563BC2);
+                transform: skewY(-10deg);
+                -webkit-transform: skewY(-10deg);
+            }
+            .footer-container{
+                margin: 0 auto;
+                padding: 0.75rem;
+                border-top: 1px solid #E1E1E1;
+                transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 12px;
+                padding-right: 12px;
+                max-width: 980px;
+            }
+            .button_color{
+                    background-color: #efd589;
+                    color: ;
+                    
+            }
+            .text_color{
+                color: black;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;box-shadow: 0 8px 6px -10px #999;">
+            <a class="navbar-brand" href="#">
+                <img src="WIN_20200906_14_11_53_Pro" alt="" style="height:100px; width: 200px;">
+            </a>
+            <button class="navbar-toggler button_color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown bg-primary ml-2 rounded">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold button_color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item my-2 dropdown-submenu" data-toggle="modal" data-target="#computer">Computer Programming</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#MOBILE">Mobile Application Development</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#MATHS">Maths</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#DATA">Digital Logic Design</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#CHEMISTRY">Chemistry</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#STRUCTURE">Data Sturcture And Algorithm</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#DESIGN">Engineering Designing</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#computera">Computer architecture & organisation</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#Physics">Engineering Physics</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#DBMS">DBMS</a>
+                        <a class="dropdown-item my-2" data-toggle="modal" data-target="#environmental">Environmental Science</a>
+                        <div class="dropdown-divider"></div>
+                        <button class="btn btn-primary my-sm-0 ml-5" type="submit">Explore all of Coursera</button>
+                        </div>
+                </li>
+                <form class="form-inline my-2 my-lg-0 ml-5">
+                    <input class="form-control" type="search" placeholder="What do you want to learn?" aria-label="Search" style="width:400px;height:40px">
+                    <button class="btn btn-primary my-2 my-sm-0 button_color" type="submit" style="height:40px"><i class="fa fa-search"></i></button>
+                </form>
+                </ul>
+                <a class="nav-link  text_color" data-toggle="modal" data-target="#exampleModalCenter" href="#">Log In</a>
+                <button class="btn btn-primary my-2 my-sm-0 rounded-pill ml-2 button_color text_color" type="submit" style="height:40px" data-toggle="modal" data-target="#exampleModalCenter2">Join for Free</button>
+                <!--computer programming Modal-->
+                <div class="modal fade" id="computer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">COMPUTER PROGRAMMING</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://publications.gbdirect.co.uk/c_book/thecbook.pdf" style="color: black">C PROGRAMMING<br />
+                                <a href="http://www.lmpt.univ-tours.fr/~volkov/C++.pdf" style="color: black">C++ PROGRAMMING<br />
+                                    <a href="http://www.dblab.ntua.gr/~gtsat/collection/Java%20books/Java%20Programming%20Language%20Handbook.pdf" style="color: black">JAVA PROGRAMMING<br />
+                                        <a href="https://www.tutorialspoint.com/python/python_tutorial.pdf" style="color: black">PYTHON PROGRAMMING<br />
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--MOBILE APPLICATION Modal-->
+                <div class="modal fade" id="MOBILE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">MOBILE APPLICATION AND DEVELOPMENT</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://sandipmal.wordpress.com/android-application-development/" style="color: black">ANDROID APPLICATION VIDEOS<br />
+                              <a href=https://seu1.org/files/level7/IT448/IT448%20-%20Learning%20Mobile%20App%20Development.pdf style="color: black">LEARNING MOBLIE APPLICATION DEVELOPMENT BY JAKOB IVERSON AND MICHEL EIERMAN <br /> 
+                              <a href="https://www.cs.cmu.edu/~bam/uicourse/830spring09/BFeiginMobileApplicationDevelopment.pdf" style="color: black">LEARNING MOBLIE APPLICATION DEVELOPMENT BY Ben FEIGIN<br /> 
+                              <a href="https://www.tutorialspoint.com/android/android_tutorial.pdf" style="color: black">LEARNING MOBLIE APPLICATION DEVELOPMENT -TUTORAIL POINT<br />  
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--MATHS Modal-->
+                <div class="modal fade" id="MATHS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">MATHS</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.math.ust.hk/~machas/numerical-methods.pdf" style="color: black">NUMERICAL METHODS by Jeffrey R. Chasnov<br />
+                                <a href="https://www.math.ust.hk/~machas/differential-equations.pdf" style="color: black">DIFFERENTIAL EQUATIONS by Jeffrey R. Chasnov<br />
+                                    <a href="http://people.math.harvard.edu/~shlomo/docs/Advanced_Calculus.pdf" style="color: black">ADVANCED CALCULUS BY JONES AND BARTLETT PUBLISHERS 
+<br />
+                                        <a href="#" style="color: black"><br />
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                 <!--Digital Logic Design Modal-->
+                <div class="modal fade" id="DATA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">DIGITAL LOGIC DESIGN </h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://drive.google.com/file/d/1EDl0NKpxico1mrHSfn9HXCx-WiDyGMlZ/view" style="color: black">Digital Logic And Computer Design By M. Morris Mano<br />
+                                <a href="#" style="color: black"><br />
+                                    
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                 <!--CHEMISTRY-->
+                <div class="modal fade" id="CHEMISTRY" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">CHEMISTRY</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/engineering-chemistry-d33546326.html" style="color: black">ENGINEERING CHEMISTRY <br />
+                                <a href="http://ccc.chem.pitt.edu/wipf/Courses/1140_05_files/organometallic%20chemistry.pdf" style="color: black">ORGANICMETALLIC CHEMISTRY<br />
+                                    <a href="https://ncert.nic.in/ncerts/l/kech205.pdf" style="color: black">ORGANIC CHEMISTRY – SOME BASIC PRINCIPLES
+AND TECHNIQUES<br />
+                                        <a href="#" style="color: black"><br />
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                  <!--DSA AND ALGO-->
+                <div class="modal fade" id="STRUCTURE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">DATA STRUCTURE AND ALGORITHM</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/data-structure-and-algorithmic-thinking-with-python-data-structure-and-algorithmic-puzzles-d158071362.html" style="color: black">DATA STRUCTURE AND ALGORITHM THINKIN WITH PYTHON<br />
+                                <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" style="color: black">DATA STRUCTURE EASY TO ADVANCE COURSE-TUTORIAL<br />
+                                    
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                  <!--ENG. DESIGN-->
+                <div class="modal fade" id="DESIGN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">ENGINEERING DESIGN</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/plumbing-engineering-design-handbook-a-plumbing-engineers-guide-to-system-design-and-specifications-volume-1-fundamentals-of-plumbing-engineering-d170130213.html" style="color: black">ENGINEERING DESIGN HANDBOOK<br />
+                                <a href="#" style="color: black"><br />
+                                    
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                 <!--comp archi-->
+                <div class="modal fade" id="computera" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" >
+                              <h5 class="modal-title" id="exampleModalCenterTitle"> COMPUTER ARCHITECTURE</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="http://www.cs.iit.edu/~virgil/cs470/Book/" style="color: black">COMPUTER ARCHITECTURE NOTES<br />
+                                
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                 <!--phy-->
+                <div class="modal fade" id="Physics" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">ENGINEERING PHYSICS</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/physics-for-scientists-engineers-with-modern-physics-4th-edition-1-2-3-e156950816.html" style="color: black">Physics for Scientists & Engineers with Modern Physics (4th Edition) 1, 2, 3.<br />
+                                <a href="#" style="color: black"><br />
+                                    
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--DBMS-->
+                <div class="modal fade" id="DBMS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">DBMS</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/database-systems-a-practical-approach-to-design-implementation-and-management-6e-e162265783.html" style="color: black">Database Systems: A Practical Approach to Design, Implementation, and Management<br />
+                                <a href="#" style="color: black"><br />
+                                    
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--EVS-->
+                <div class="modal fade" id="Environmental" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">ENVIRONMENTAL SCIENCE</h5>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5" >
+                              <a href="https://www.pdfdrive.com/basics-of-environmental-science-e33429625.html" style="color: black">BASICS OF ENVIRONMENTAL SCIENCE<br />
+                                <a href="#" style="color: black"><br />
+                                
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--LogIn Modal-->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Log In</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5">
+                              EMAIL<br />
+                              <input class="mb-2 p-2" type="email" placeholder="Email" name="email" style="width:90%;height:40px"> <br /> 
+                              PASSWORD<br />
+                              <input class="mb-2 p-2" type="password" placeholder="Password" name="password" style="width:90%;height:40px"><br /> 
+                              <p class="text-right"><a href="#">Forgot Password?</a></p>
+                              <button type="button" class="btn btn-primary mx-auto mb-2" style="width:90%;height:40px">Log In</button>
+                              <div class="dropdown-divider"></div>
+                              <p class="text-center"><a href="#">Log in with your organization</a></p>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--SignUp Modal-->
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Sign Up</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body font-weight-bold ml-5">
+                                FULL NAME<br />
+                                <input class="mb-2 p-2" type="text" placeholder="Full name" name="name" style="width:90%;height:40px"> <br />
+                                EMAIL<br />
+                                <input class="mb-2 p-2" type="email" placeholder="Email" name="email" style="width:90%;height:40px"> <br /> 
+                                PASSWORD<span style="color:gray;font-weight:normal;">   (Between 8 and 72 characters)</span><br />
+                                <input class="mb-2 p-2" type="password" placeholder="Password" name="password" style="width:90%;height:40px"><br /> 
+                                
+                                <button type="button" class="btn btn-primary mx-auto my-2" style="width:90%;height:40px">Join for Free</button>
+                                <div class="dropdown-divider"></div>  
+                                <p class="text-center"><a href="#">Sign up with your organization</a></p>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h2 class="topic-header" style="color:black">Explore Topics and Skills</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/data_science.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <a data-toggle="modal" data-target="#computer"> <h3 class="card-title mt-5">Computer Programming</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white ">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/business.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#CHEMISTRY">Chemistry</a></h3>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white mt-4">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/computer_science.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#environmental">Environmental Science</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/personal_development.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#MATHS">Maths</a></h3>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white mt-4">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/information_technology.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#DBMS">DBMS</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                                <div class="col-md-4">
+                                        <div class="card bg-dark text-white">
+                                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/language_learning.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#computera">Computer Architecture And Organisation</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-dark text-white mt-4">
+                                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/health.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#DATA">Digital Logic Design</a></h3>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-dark text-white">
+                                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/math_and_logic.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#STRUCTURE">Data Structure & Alogorithm</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark text-white mt-4">
+                                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/social_sciences.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#PHYSICS">Engineering Physics</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-dark text-white">
+                                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/physical_science_and_engineering.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#DESIGN">Engineering Designing</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark text-white mt-4">
+                                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/browse/domains/arts_and_humanities.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=crop" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h3 class="card-title mt-5"><a data-toggle="modal" data-target="#MOBILE">Mobile Application Development</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true" style="margin-right: 230px;color:black;font-size: 50px;">&lt;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="" aria-hidden="true" style="margin-left: 230px;color:black;font-size: 50px;">&gt;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <br />
+
+
+            <h2 class="topic-header" style="color: black">Earn Your Knowledge</h2>
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="height:300px">
+                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/global-mba-macquarie/banner.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Computer Programming</h5>
+                                        <p class="card-text">from Vellore Institute of Technology</p>
+                                    </div>
+                                    <div class="card-footer footer-shape">
+                                        <div class="footer-left-shape" style="background-color:red;"></div>
+                                        <div class="footer-right-shape" style="background-color: red;"></div>
+                                        <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/75/9b16b03fca11e5a4c2491977540484/square-360px.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:300px">
+                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mph-imperial.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a data-toggle="modal" data-target="#MOBILE">Mobile Application Development</a></h5>
+                                        <p class="card-text">from Vellore Institute of Technology</p>
+                                    </div>
+                                    <div class="card-footer footer-shape">
+                                        <div class="footer-left-shape" style="background-color: blue;"></div>
+                                        <div class="footer-right-shape" style="background-color: blue;"></div>
+                                        <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b1/f66aa00aa811e8b14d27d7114bc00b/ImperialCollegeLondon_BLUE_500x500px.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:300px">
+                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a data-toggle="modal" data-target="#MATHS">Mathematics</a></h5>
+                                        <p class="card-text">from the Vellore Institute of Technology</p>
+                                    </div>
+                                    <div class="card-footer footer-shape">
+                                            <div class="footer-left-shape" style="background-color: lightblue;"></div>
+                                            <div class="footer-right-shape" style="background-color: lightblue;"></div>
+                                            <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:300px">
+                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mscml-imperial/banner.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a data-toggle="modal" data-target="#DATA">Digital Logic Design</a></h5>
+                                        <p class="card-text">from Vellore Institute of Technology</p>
+                                    </div>
+                                    <div class="card-footer footer-shape">
+                                        <div class="footer-left-shape" style="background-color: blue;"></div>
+                                        <div class="footer-right-shape" style="background-color: blue;"></div>
+                                        <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b1/f66aa00aa811e8b14d27d7114bc00b/ImperialCollegeLondon_BLUE_500x500px.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:300px">
+                                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/global-mba-macquarie/banner.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chemistry</h5>
+                                                <p class="card-text">from Vellore Institute of Technology</p>
+                                            </div>
+                                            <div class="card-footer footer-shape">
+                                                <div class="footer-left-shape" style="background-color:red;"></div>
+                                                <div class="footer-right-shape" style="background-color: red;"></div>
+                                                <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/75/9b16b03fca11e5a4c2491977540484/square-360px.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:300px">
+                                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"><a data-toggle="modal" data-target="#STRUCTURE">Data Structure & Algorithm</a></h5>
+                                                    <p class="card-text">from Vellore Institute of Technology</p>
+                                                </div>
+                                                <div class="card-footer footer-shape">
+                                                        <div class="footer-left-shape" style="background-color: lightblue;"></div>
+                                                        <div class="footer-right-shape" style="background-color: lightblue;"></div>
+                                                        <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:300px">
+                                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a data-toggle="modal" data-target="#DESIGN">Engineering Designing</a></h5>
+                                                <p class="card-text">from Vellore Institute of Technology</p>
+                                            </div>
+                                            <div class="card-footer footer-shape">
+                                                    <div class="footer-left-shape" style="background-color: orange;"></div>
+                                                    <div class="footer-right-shape" style="background-color: orange;"></div>
+                                                    <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/be/bf4290646811e5b6de89a29eb8ebc3/ASUlogo.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:300px">
+                                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" width="148px" height="83px" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a data-toggle="modal" data-target="#computera">Computer Architecture & Organisation</a></h5>
+                                                <p class="card-text">from Vellore Institute of Technology</p>
+                                            </div>
+                                            <div class="card-footer footer-shape">
+                                                    <div class="footer-left-shape" style="background-color: lightblue;"></div>
+                                                    <div class="footer-right-shape" style="background-color: lightblue;"></div>
+                                                    <div class="footer-logo"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF" class="footer-image"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <span class="" aria-hidden="true" style="margin-right: 230px;color:black;font-size: 50px;">&lt;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="" aria-hidden="true" style="margin-left: 230px;color:black;font-size: 50px;">&gt;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <br />
+
+                <h2 class="topic-header" style="color: black"> List Of Most Popular Courses</h2>
+                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="height:350px">
+                                    <div class="card-img-container" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop')">
+                                    </div>
+                                    <span class="logo-container"><div class="partner-logo" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF')"></div></span>
+                                    <div class="card-body card-gradient-body" style="color:white">
+                                            <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile Application Development</h5>
+                                            <p class="card-text">Vellore Institute of Technology</p>
+                                            <div class="card-footer" style="color:lightgray">
+                                                    <!--Specialization(5 courses)-->
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:350px">
+                                    <div class="card-img-container" style="background-image: url('https://media.licdn.com/dms/image/C4E0BAQHvGHvTVICP6Q/company-logo_200_200/0?e=2159024400&v=beta&t=TbcVo39C4PPRMAq0z2msYqWytZjNt2EGgRXOnnlQftg')">
+                                    </div>
+                                    <span class="logo-container"><div class="partner-logo" style="background-image: url('https://media.licdn.com/dms/image/C4E0BAQHvGHvTVICP6Q/company-logo_200_200/0?e=2159024400&v=beta&t=TbcVo39C4PPRMAq0z2msYqWytZjNt2EGgRXOnnlQftg')"></div></span>
+                                    <div class="card-body card-gradient-body" style="color:white">
+                                            <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python</h5>
+                                            <p class="card-text">Vellore Institute of Technology</p>
+                                            <div class="card-footer" style="color:lightgray">
+                                                    <!--Specialization(5 courses)-->
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:350px">
+                                    <div class="card-img-container" style="background-image: url('https://media.bizj.us/view/img/10845640/university-of-pennsylvania-campus-upenn*750xx3800-2138-0-198.jpg')">
+                                    </div>
+                                    <span class="logo-container"><div class="partner-logo" style="background-image: url('data:image/png;base64,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')"></div></span>
+                                    <div class="card-body card-gradient-body" style="color:white">
+                                            <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Structure & Algorithm</h5>
+                                            <p class="card-text">Vellore Institute of Technology</p>
+                                            <div class="card-footer" style="color:lightgray">
+                                                    <!--Specialization(5 courses)-->
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="height:350px">
+                                    <div class="card-img-container" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ed/4131809fe511e8937a7926bc59e37f/Professional-Certificate---Data-Science---600x600---Blu-Text.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF')">
+                                    </div>
+                                    <span class="logo-container"><div class="partner-logo" style="background-image: url('https://www.cbronline.com/wp-content/uploads/2018/01/IBM-Logo_2.png')"></div></span>
+                                    <div class="card-body card-gradient-body" style="color:white">
+                                            <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computer Architecture & Organisation</h5>
+                                            <p class="card-text">Vellore Institute of Technology</p>
+                                            <div class="card-footer" style="color:lightgray">
+                                                    <!--PROFESSIONAL CERTIFICATE-->
+                                            </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:350px">
+                                            <div class="card-img-container" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop')">
+                                            </div>
+                                            <span class="logo-container"><div class="partner-logo" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=&h=&fit=scale&bg=FFF')"></div></span>
+                                            <div class="card-body card-gradient-body" style="color:white">
+                                                    <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digital Logic Design</h5>
+                                                    <p class="card-text">Vellore Institute of Technology</p>
+                                                    <div class="card-footer" style="color:lightgray">
+                                                            <!--Specialization(5 courses)-->
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:350px">
+                                                <div class="card-img-container" style="background-image: url('https://media.licdn.com/dms/image/C4E0BAQHvGHvTVICP6Q/company-logo_200_200/0?e=2159024400&v=beta&t=TbcVo39C4PPRMAq0z2msYqWytZjNt2EGgRXOnnlQftg')">
+                                                </div>
+                                                <span class="logo-container"><div class="partner-logo" style="background-image: url('https://media.licdn.com/dms/image/C4E0BAQHvGHvTVICP6Q/company-logo_200_200/0?e=2159024400&v=beta&t=TbcVo39C4PPRMAq0z2msYqWytZjNt2EGgRXOnnlQftg')"></div></span>
+                                                <div class="card-body card-gradient-body" style="color:white">
+                                                        <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Environmental Science</h5>
+                                                        <p class="card-text">Vellore Institute of Technology</p>
+                                                        <div class="card-footer" style="color:lightgray">
+                                                                <!--Specialization(5 courses)-->
+                                                        </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:350px">
+                                                <div class="card-img-container" style="background-image: url('https://media.bizj.us/view/img/10845640/university-of-pennsylvania-campus-upenn*750xx3800-2138-0-198.jpg')">
+                                                </div>
+                                                <span class="logo-container"><div class="partner-logo" style="background-image: url('data:image/png;base64,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')"></div></span>
+                                                <div class="card-body card-gradient-body" style="color:white">
+                                                        <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Engineering Physics</h5>
+                                                        <p class="card-text">Vellore Institute of Technology</p>
+                                                        <div class="card-footer" style="color:lightgray">
+                                                                <!--Specialization(5 courses)-->
+                                                        </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card" style="height:350px">
+                                            <div class="card-img-container" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ed/4131809fe511e8937a7926bc59e37f/Professional-Certificate---Data-Science---600x600---Blu-Text.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF')">
+                                            </div>
+                                            <span class="logo-container"><div class="partner-logo" style="background-image: url('https://www.cbronline.com/wp-content/uploads/2018/01/IBM-Logo_2.png')"></div></span>
+                                            <div class="card-body card-gradient-body" style="color:white">
+                                                    <h5 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mathematics</h5>
+                                                    <p class="card-text">Vellore Institute of Technology</p>
+                                                    <div class="card-footer" style="color:lightgray">
+                                                          <!--PROFESSIONAL CERTIFICATE-->
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                        <span class="" aria-hidden="true" style="margin-right: 230px;color:black;font-size: 50px;">&lt;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                        <span class="" aria-hidden="true" style="margin-left: 230px;color:black;font-size: 50px;">&gt;</span>
+                        <span class="sr-only">Next</span>
+                    </a>  
+                </div>
+                <br />
+
+               <!-- <div class="row" style="align-items:center;">
+                    <div class="card col-md-6">
+                        <div class="card-body row">
+                            <div class="left-container" style="width:70%">
+                                <h5 class="card-title">Interested in earning your MBA online?</h5>
+                                <p class="card-text">Learn more about the program in the next admissions webinar on 10/23 at 5pm CT.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                            <div class="right-container">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-promounit-images.s3.amazonaws.com/5e/4c158b1f9440ed834b59c3c4eae9bd/Illinois-imba-new-image.png?auto=format%2Ccompress&dpr=2.0000000298023224&w=172" style="height:200px"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-6">
+                        <div class="card-body row">
+                            <div class="left-container" style="width:70%">
+                                <h5 class="card-title">MasterTrack Certificates in AI,Data Science, & Business</h5>
+                                <p class="card-text">Move your career forward with Master's degree learning you can access from anywhere.</p>
+                                <a href="#" class="btn btn-outline-primary">Explore MasterTrack Certificstes</a>
+                            </div>
+                            <div class="right-container">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-promounit-images.s3.amazonaws.com/14/7f24c947d3484d95291f6c828db289/1a.-Generic-MasterTrack-vertical-HPP-unit.png?auto=format%2Ccompress&dpr=2.0000000298023224&w=172" style="height:200px"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div> -->
+
+        <div class="join-banner mt-5 p-5 container-fluid" style="text-align: center;background-color: #0c2341;color:white;font-family:'Bahnschrift Light';">
+                <h3>Join for free and get personalized recommendations,updates and offers</h3>
+                <a href="#" class="btn btn-primary mt-3 px-5 button_color text_color">Join for free</a>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-container row">
+                <div class="content col-md-5">
+                    <img src="./Career Support.png" width="150px" height="100px" alt="">
+                    <p>Career Support provides universal access to the world's best education, partnering with top universities and organizations to offer courses online.</p>
+                    <small>&#9400; 2019 Career Support Inc. All rights reserved.</small>
+                    <img class="mt-3" src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg" height="45px"/>
+                    <img class="mt-3 ml-2" src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png" height="45px"/>
+                </div>
+                <div class="footer-links col-md-7 mt-3 row" style="color:gray">
+                    <div class="col-md-2 mr-5">
+                        <ul style="list-style-type:none">Career Support
+                            <li class="my-2">About</li>
+                            <li class="my-2">Leadership</li>
+                            <li class="my-2">Careers</li>
+                            <li class="my-2">Catalog</li>
+                            <li class="my-2">Certificates</li>
+                            <li class="my-2">Degrees</li>
+                            <li class="my-2">For Enterprise</li>
+                            <li class="my-2">For Government</li>
+                            <li class="my-2">For Campus</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mr-5">
+                        <ul style="list-style-type:none">COMMUNITY
+                                <li class="my-2">Learners</li>
+                                <li class="my-2">Partners</li>
+                                <li class="my-2">Developers</li>
+                                <li class="my-2">Beta Testers</li>
+                                <li class="my-2">Translators</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mr-5">
+                        <ul style="list-style-type:none">CONNECT
+                                <li class="my-2">Blog</li>
+                                <li class="my-2">Facebook</li>
+                                <li class="my-2">LinkedIn</li>
+                                <li class="my-2">Twitter</li>
+                                <li class="my-2">Instagram</li>
+                                <li class="my-2">YouTube</li>
+                                <li class="my-2">Tech Blog</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1">
+                            <ul style="list-style-type:none">MORE
+                                <li class="my-2">Terms</li>
+                                <li class="my-2">Privacy</li>
+                                <li class="my-2">Help</li>
+                                <li class="my-2">Accessibility</li>
+                                <li class="my-2">Press</li>
+                                <li class="my-2">Conatact</li>
+                                <li class="my-2">Directory</li>
+                                <li class="my-2">Affiliates</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
